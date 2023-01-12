@@ -36,15 +36,4 @@ class MainActivity : AppCompatActivity() {
     override fun  onSupportNavigateUp(): Boolean {
         return navController.navigateUp(appBarConfiguration)
     }
-//    fun goHistory(view: View?) {
-//        Log.i("ButtonTag","actionListener")
-//        val intent = Intent(this, HistoryFragment::class.java)
-//        startActivity(intent)
-//    }
-//    fun goBalance(view: View?) {
-//        Log.i("ButtonTag","history")
-//    }
-//    fun goPayment(view: View?) {
-//        Log.i("ButtonTag","history")
-//    }
 }

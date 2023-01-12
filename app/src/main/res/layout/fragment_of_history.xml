@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".HistoryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <Button
         android:id="@+id/back"
         android:layout_width="wrap_content"

@@ -9,35 +9,35 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/go_historyFragment"
+            android:id="@+id/mainF_to_historyFragment"
             app:destination="@id/historyFragment"
              />
         <action
-            android:id="@+id/action_mainFragment_to_paymentsFragment"
+            android:id="@+id/mainF_to_paymentsFragment"
             app:destination="@+id/paymentsFragment"
             />
         <action
-            android:id="@+id/go_balanceFragment"
+            android:id="@+id/mainF_to_balanceFragment"
             app:destination="@+id/balanceFragment"
             />
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.example.navigation.HistoryFragment"
-        android:label="fragment_phistory"
-        tools:layout="@layout/fragment_history" >
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_of_history" >
         <action
-            android:id="@+id/action_secondFragment_to_firstFragment"
+            android:id="@+id/currentFragment_to_mF"
             app:destination="@id/mainFragment"
             />
     </fragment>
     <fragment
         android:id="@+id/paymentsFragment"
         android:name="com.example.navigation.PaymentsFragment"
-        android:label="fragment_payment"
+        android:label="fragment_payments"
         tools:layout="@layout/fragment_payments">
         <action
-            android:id="@+id/action_paymentsFragment_to_transferFragment"
+            android:id="@+id/paymentsF_to_transferFragment"
             app:destination="@+id/transferFragment"
             />
     </fragment>
@@ -47,7 +47,7 @@
         android:label="fragment_balance"
         tools:layout="@layout/fragment_balance">
         <action
-            android:id="@+id/action_balanceFragment_to_mainFragment"
+            android:id="@+id/balanceF_to_mainFragment"
             app:destination="@+id/mainFragment"
             />
     </fragment>
@@ -57,17 +57,17 @@
         android:label="fragment_transfer"
         tools:layout="@layout/fragment_transfer">
         <action
-            android:id="@+id/action_transferFragment_to_confirmFragment"
-            app:destination="@+id/confirmFragment"
-            />
+            android:id="@+id/transferF_to_confirmationFragment"
+            app:destination="@+id/confirmationFragment"
+           />
     </fragment>
     <fragment
-        android:id="@+id/confirmFragment"
+        android:id="@+id/confirmationFragment"
         android:name="com.example.navigation.ConfirmationFragment"
-        android:label="fragment_confirm"
+        android:label="fragment_confirmation"
         tools:layout="@layout/fragment_confirmation">
         <action
-            android:id="@+id/action_confirmFragment_to_mainFragment"
+            android:id="@+id/confirmationF_to_mainFragment"
             app:destination="@+id/mainFragment"
             />
     </fragment>
