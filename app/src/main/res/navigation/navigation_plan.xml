@@ -25,7 +25,7 @@
         android:id="@+id/historyFragment"
         android:name="com.example.navigation.HistoryFragment"
         android:label="fragment_history"
-        tools:layout="@layout/fragment_of_history" >
+        tools:layout="@layout/fragment_history" >
         <action
             android:id="@+id/currentFragment_to_mF"
             app:destination="@id/mainFragment"

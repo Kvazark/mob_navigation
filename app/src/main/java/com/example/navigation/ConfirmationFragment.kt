@@ -6,18 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [ConfirmationFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ConfirmationFragment : Fragment() {
 
 
@@ -30,7 +21,10 @@ class ConfirmationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_confirmation, container, false)
-        val confirm_button = view.findViewById<Button>(R.id.back)
+        val confirm_button = view.findViewById<Button>(R.id.backMain)
+        val number = arguments?.getString("number").toString()
+        val amount = arguments?.getString("amount").toString()
+        view.findViewById<TextView>(R.id.fin_text).text = "Номер:${number}; Сумма: ${amount}"
         confirm_button.setOnClickListener {
             findNavController().navigate(
                 R.id.confirmationF_to_mainFragment,
